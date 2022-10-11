@@ -1,6 +1,6 @@
-isRain = int(input('Идет ли дождь? '))
+rain = int(input('Идет ли дождь? '))
 
-if (isRain == 1):
+if (rain == 1):
     print('Пошёл дождь. Возьмите зонтик!')
 else: 
     print('Дождя нет. На улицу ясно!')
