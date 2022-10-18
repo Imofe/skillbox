@@ -1,0 +1,1 @@
+print([num % 5 if num % 2 else 1 for num in range(int(input('Введите длину списка: ')))])
