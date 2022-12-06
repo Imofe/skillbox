@@ -1,0 +1,12 @@
+def cut_lists(arr):
+    if not arr:
+        return []
+    if not isinstance(arr[-1], list):
+        return cut_lists(arr[:-1]) + [arr[-1]]
+    return cut_lists(arr[:-1]) + cut_lists(arr[-1])
+
+
+nice_list = [1, 2, [3, 4], [[5, 6, 7], [8, 9, 10]],
+             [[11, 12, 13], [14, 15], [16, 17, 18]]]
+
+print('Ответ:', cut_lists(nice_list))
